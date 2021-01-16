@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-01-16T17:02:41.140Z",
+    "end": "2021-01-16T17:03:24.901Z",
+    "duration": 43761,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95a503ae-ca06-4517-a664-5e091eb814d2",
+      "title": "",
+      "fullFile": "cypress/integration/examples/naxion/naxion.umowa.spec.js",
+      "file": "cypress/integration/examples/naxion/naxion.umowa.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b8b9c89-2964-4b0d-a5a0-8a45e1c1b422",
+          "title": "Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Dodawanie umowy",
+              "fullTitle": "Navigation Dodawanie umowy",
+              "timedOut": null,
+              "duration": 4346,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots/examples/naxion/naxion.umowa.spec.js/Navigation -- Dodawanie umowy (failed) (attempt 4).png\"\n}",
+              "code": "cy.get(\"#Input_UserName\").type(\"admin-llcd\");\ncy.get(\"#Input_Password\").type(\"!Q2w3e4r\");\ncy.get(\"#btn-login\").click();\ncy.get(\".sidebar-nav > .nav > :nth-child(4)\").contains(\"Umowy\").click();\ncy.get(\".k-grid-toolbar\").contains(\"Dodaj umowę\").click();\ncy.get(\".d-flex > :nth-child(1)\").find(\"input\").type(\"Umowa\");\ncy.contains(\"Umowa\").click();\ncy.get(\".d-flex > :nth-child(2)\").find(\"input\").type(\"Wladim Jakuszew\");\ncy.get(\".d-flex > :nth-child(3)\").find(\"input\").type(\"(Katedra Administracji i Prawa Administracyjnego) Katedra Administracji i Prawa Administracyjnego\");\ncy.contains(\"(Katedra Administracji i Prawa Administracyjnego) Katedra Administracji i Prawa Administracyjnego\").click();\ncy.get(\".d-flex > :nth-child(4)\").find(\"input\").type(\"(1L) Studia I stopnia (licencjackie)\");\ncy.get(\".d-flex > :nth-child(6)\").find(\"input\").type(\"(1) studia stacjonarne\");\ncy.get(\".card-header-strong > .card-body\").contains(\"Zapisz umowę\").click();\ncy.fixture(\"file.txt\").then(function (fileContent) {\n  cy.get(\".ngx-file-drop__file-input\").attachFile({\n    fileContent: fileContent.toString(),\n    fileName: \"file.txt\",\n    mimeType: \"text/txt\"\n  });\n});\ncy.get(\".card-header-strong > .card-body\").contains(\"Zapisz umowę\").click();\ncy.get(\".card-header-strong > .card-body\").contains(\"Zamknij\").click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#Input_UserName`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#Input_UserName`, but never found it.\n    at Context.eval (https://s1.naxiom.com/__cypress/tests?p=cypress/integration/examples/naxion/naxion.umowa.spec.js:624:8)",
+                "diff": null
+              },
+              "uuid": "1ad13379-37a9-450e-b682-ab1427738be1",
+              "parentUUID": "8b8b9c89-2964-4b0d-a5a0-8a45e1c1b422",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sprawdź wniosek",
+              "fullTitle": "Navigation Sprawdź wniosek",
+              "timedOut": null,
+              "duration": 4322,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots/examples/naxion/naxion.umowa.spec.js/Navigation -- Sprawdź wniosek (failed) (attempt 4).png\"\n}",
+              "code": "cy.get(\".sidebar-nav > .nav > :nth-child(2)\").contains(\"Wnioski\").click();\ncy.get(\".k-grid-toolbar\").contains(\"Nowy dokument\").click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidebar-nav > .nav > :nth-child(2)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.sidebar-nav > .nav > :nth-child(2)`, but never found it.\n    at Context.eval (https://s1.naxiom.com/__cypress/tests?p=cypress/integration/examples/naxion/naxion.umowa.spec.js:648:8)",
+                "diff": null
+              },
+              "uuid": "c619fec1-0de8-4b92-aa71-1abf9148b972",
+              "parentUUID": "8b8b9c89-2964-4b0d-a5a0-8a45e1c1b422",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1ad13379-37a9-450e-b682-ab1427738be1",
+            "c619fec1-0de8-4b92-aa71-1abf9148b972"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8668,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

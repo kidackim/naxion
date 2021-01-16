@@ -1,3 +1,7 @@
 node_modules/
 /cypress/screenshots/
-/cypress/videos
+/cypress/reports/*
+/cypres/results/*
+/cypres/videos/*
+cypress/integration/examples/naxion/naxion.umowa.spec.js
+.DS_Store

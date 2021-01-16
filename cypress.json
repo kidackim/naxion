@@ -1,4 +1,11 @@
 {
-  "projectId": "87yt6i",
-  "chromeWebSecurity": false
+  "reporter": "cypress-mochawesome-reporter",
+  "defaultCommandTimeout": "10000",
+  "requestTimeout": "10000",
+  "pageLoadTimeout": 100000,
+  "chromeWebSecurity": false,
+  "retries": {
+    "runMode": 3,
+    "openMode": 0
+  }
 }
