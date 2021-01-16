@@ -1,9 +1,9 @@
 {
     "scripts": {
         "cypress:report": "generate-mochawesome-report",
-        "delete:reports": "rm cypress/results/* || true",
+        "delete:reports": "rm cypress/results/* cypress/videos/examples/naxion || true",
         "prereport": "npm run delete:reports",
-        "run": "npm cypress run",
+        "run": "npx cypress run --browser chrome --headless",
         "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=cypress/reporters/custom.json"
     },
     "devDependencies": {
